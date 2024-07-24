@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @import url(body);
 @import url()
@@ -9,14 +10,26 @@
   }
   :root{
     ---greywhite: rgba( 255,255,255,0.5)
+=======
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+>>>>>>> 0eebb8058e1603a68192b273f6e643c77e66b2c2
   }
   
   body {
     font-family: Inter, sans-serif;
     background-color: #7a7adb;
+<<<<<<< HEAD
     background-image: -o-linear-gradient(173deg, #602f60 0%, #170e13 74%);
     background-image: linear-gradient(277deg, #602f60 0%, #170e13 74%);
     color: greenyellow;
+=======
+    background-image: linear-gradient(277deg, #602f60 0%, #170e13 74%);
+    color: white;
+>>>>>>> 0eebb8058e1603a68192b273f6e643c77e66b2c2
     min-height: 100vh;
   }
   
@@ -43,18 +56,25 @@
   */
   
   header {
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> 0eebb8058e1603a68192b273f6e643c77e66b2c2
   }
   
   header .icon {
     width: 20px;
+<<<<<<< HEAD
     -webkit-transition-duration: 2s;
          -o-transition-duration: 2s;
             transition-duration: 2s;
     cursor: pointer;
     
+=======
+>>>>>>> 0eebb8058e1603a68192b273f6e643c77e66b2c2
   }
   
   header nav {
@@ -71,16 +91,21 @@
       MARK: Main
   */
   main {
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-pack:;
         -ms-flex-pack:;
             justify-content:
+=======
+    justify-content: space-between;
+>>>>>>> 0eebb8058e1603a68192b273f6e643c77e66b2c2
   }
   
   /* Left  */
   .left {
+<<<<<<< HEAD
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
     display: -webkit-box;
@@ -97,12 +122,22 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+=======
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+>>>>>>> 0eebb8058e1603a68192b273f6e643c77e66b2c2
   }
   
   .left svg {
     height: 30px;
     color: white;
+<<<<<<< HEAD
     fill:var(---greywhite);
+=======
+>>>>>>> 0eebb8058e1603a68192b273f6e643c77e66b2c2
   }
   
   .left h1 {
@@ -112,6 +147,7 @@
   }
   
   .left .gradient {
+<<<<<<< HEAD
     background: -o-radial-gradient(
       top left,
       circle,
@@ -123,6 +159,8 @@
       #ff6558 87.66%,
       #ff891f 100%
     );
+=======
+>>>>>>> 0eebb8058e1603a68192b273f6e643c77e66b2c2
     background: radial-gradient(
       circle at top left,
       #099ef1 0%,
@@ -150,16 +188,23 @@
     border-radius: 10px;
     font-weight: 500;
     cursor: pointer;
+<<<<<<< HEAD
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
     hover:white
+=======
+>>>>>>> 0eebb8058e1603a68192b273f6e643c77e66b2c2
   }
   
   /* Right */
   .right {
+<<<<<<< HEAD
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
+=======
+    flex-basis: 60%;
+>>>>>>> 0eebb8058e1603a68192b273f6e643c77e66b2c2
   }
   
   .right video {
@@ -168,14 +213,19 @@
   
   @media screen and (max-width: 650px) {
     main {
+<<<<<<< HEAD
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
+=======
+      flex-direction: column;
+>>>>>>> 0eebb8058e1603a68192b273f6e643c77e66b2c2
       gap: 40px;
     }
     .left {
       text-align: center;
+<<<<<<< HEAD
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -184,6 +234,13 @@
     .right {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
+=======
+      align-items: center;
+    }
+    .left,
+    .right {
+      flex-basis: 100%;
+>>>>>>> 0eebb8058e1603a68192b273f6e643c77e66b2c2
     }
   }
   
@@ -198,7 +255,10 @@
       MARK: Utility 
   */
   .flex {
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
+=======
+>>>>>>> 0eebb8058e1603a68192b273f6e643c77e66b2c2
     display: flex;
   }
