@@ -1,9 +1,11 @@
+
 @import url(body);
 @import url()
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   :root{
     ---greywhite: rgba( 255,255,255,0.5)
@@ -12,6 +14,7 @@
   body {
     font-family: Inter, sans-serif;
     background-color: #7a7adb;
+    background-image: -o-linear-gradient(173deg, #602f60 0%, #170e13 74%);
     background-image: linear-gradient(277deg, #602f60 0%, #170e13 74%);
     color: greenyellow;
     min-height: 100vh;
@@ -40,12 +43,16 @@
   */
   
   header {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   
   header .icon {
     width: 20px;
-    transition-duration: 2s;
+    -webkit-transition-duration: 2s;
+         -o-transition-duration: 2s;
+            transition-duration: 2s;
     cursor: pointer;
     
   }
@@ -64,18 +71,32 @@
       MARK: Main
   */
   main {
-    justify-content: space-between;
-    justify-content:
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-pack:;
+        -ms-flex-pack:;
+            justify-content:
   }
   
   /* Left  */
   .left {
-    flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
-    align-items: start;
-    justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   
   .left svg {
@@ -91,6 +112,17 @@
   }
   
   .left .gradient {
+    background: -o-radial-gradient(
+      top left,
+      circle,
+      #099ef1 0%,
+      #6863f8 18.82%,
+      #d84ffa 32.6%,
+      #f058c5 52.83%,
+      #ff4f90 68.03%,
+      #ff6558 87.66%,
+      #ff891f 100%
+    );
     background: radial-gradient(
       circle at top left,
       #099ef1 0%,
@@ -118,13 +150,16 @@
     border-radius: 10px;
     font-weight: 500;
     cursor: pointer;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
     hover:white
   }
   
   /* Right */
   .right {
-    flex-basis: 60%;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
   }
   
   .right video {
@@ -133,16 +168,22 @@
   
   @media screen and (max-width: 650px) {
     main {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       gap: 40px;
     }
     .left {
       text-align: center;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
     }
     .left,
     .right {
-      flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
     }
   }
   
@@ -157,5 +198,7 @@
       MARK: Utility 
   */
   .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
